@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(225, 248, 248);
+    
+}
+div{
+    margin-bottom: 1rem;
+}
+
+select{
+    text-align: center;
+    text-align-last: center;
+}
+
+.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    position: relative;
+    width: 50rem;
+    margin:  auto;
+    padding: 2rem 2rem 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: aliceblue;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.title{
+    margin-bottom: 3rem;
+}
+
+.inputContainer {
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 0.6rem;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    padding: 0 1rem;
+    outline: none;
+    background: none;
+    z-index: 1;
+
+    accent-color: purple;
+}
+
+.gender{
+    padding: 0 1rem;
+    outline: none;
+    background: none;
+    z-index: 1;
+    border: 1px solid #DADCE0;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+}
+.gender-option{
+    position: absolute;
+    top: 30%;
+    left:5rem;
+}
+
+::placeholder {
+    color: #b5b5b5;
+}
+
+.label {
+    position: absolute;
+    padding: 0 4px;
+    background-color: aliceblue;
+    font-size: 16px;
+    z-index: 10;
+    font-weight: 600;
+    color: purple;
+    margin-left: 0.2rem;
+}
+
+.submitBtn {
+    display: block;
+    /* margin-left: auto; */
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: aliceblue;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.submitBtn:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+}
+
+.input:focus {
+    border: 2px solid purple;
+}
+
+@media screen and (max-width:400px){
+    .inputContainer{
+        height: 6rem;
+    }
+}

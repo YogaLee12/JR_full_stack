@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  background-color: antiquewhite;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: indigo;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 300px;
+  min-height: 250px;
+  background-color: rgb(93, 188, 157);
+  box-sizing: border-box;
+  color: beige;
+  padding: 30px;
+  border-radius: 3px;
+  margin: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.card_image img {
+  width: 100%;
+}
+
+.card:nth-child(2) {
+  background-color: #3367c0;
+}
+
+.card:last-child {
+  background-color: rgb(86, 0, 86);
+}
+
+.card_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_price {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}/*# sourceMappingURL=flex_style.css.map */

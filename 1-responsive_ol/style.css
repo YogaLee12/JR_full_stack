@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --n: 1;
+}
+
+body{
+    --h: 212deg;
+    --l: 43%;
+    --brandColor: hsl(var(--h),71%,var(--l));
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(225, 248, 248);
+}
+
+p{
+    line-height: 1.5;
+}
+
+ol{
+    list-style: none; /* 去掉前面的数字 */
+    padding: 0 1rem; /* 参考root element进行调整 */
+    /* define counter */
+    counter-reset: list;
+}
+li{
+    /* 作用域限制在li和其子元素中 */
+    --stop: calc(100% / var(--length) * var(--i));
+    --l:62%;
+    --l2:88%;
+    --h: calc((var(--i) - 1) * (180 / var(--length)));
+    --c1: hsl(var(--h), 75%, var(--l));
+    --c2: hsl(var(--h), 75%, var(--l2));
+
+    position: relative;
+    counter-increment: list;
+    max-width: 45rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: aliceblue;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+/* 伪类 */
+li::before{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, 
+                    var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+h3{
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem;
+    color: rgb(70,70,70);
+}
+
+h3::before{
+    content: counter(list);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;/* 设置成圆形 */
+    padding: 1rem;
+    background-color: var(--c1);
+    color: azure;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+
+@media (min-width:40em){
+    li{
+        margin: 3rem auto;
+        padding: 3rem 2rem 2rem;
+    }
+    h3{
+        font-size: 2.25rem;
+        margin: 0 0 2rem;
+    }
+    h3::before{
+        margin-right: 1.5rem;
+    }
+}

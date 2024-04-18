@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>input 表单元素</title>
+  </head>
+  <body>
+    <!-- input是个单标签 -->
+    <form action="xxx.php" method="get">
+      <span>Username:</span>
+      <input type="text" name="username" id="username" placeholder="input your username" maxlength="6" required><br>
+      <span>Password:</span>
+      <input type="password" name="pwd" id="pwd"><br>
+  <!-- 同样的name代表是在同一组 -->
+      <!-- redio 多选一，必须有相同的name才能实现 -->
+      <span>male </span>
+      <input type="radio" value="male" name="gender">
+      <span>female</span>
+      <input type="radio" value="female" name="gender" required>
+      <br>
+      <!-- checkbox 复选框，实现多选 -->
+      <span>Macca's</span>
+      <input type="checkbox" name="food">
+      <span>KFC</span>
+      <input type="checkbox" name="food">
+      <span>Tacco bell</span>
+      <input type="checkbox" name="food">
+      <br>
+      <!-- 提交 -->
+      <input type="submit" value="register">
+    </form>
+  </body>
+</html>

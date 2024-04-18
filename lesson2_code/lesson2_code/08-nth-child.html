@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>nth child</title>
+    <style>
+      li:last-child{
+        color: red;
+      }
+      li:nth-child(3){
+        font-weight: bold;
+      }
+      p:nth-of-type(2){
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="container">
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>bold hello world</li>
+      <li>hello world</li>
+      <li>red hello world</li>
+    </ul>
+    <section>
+      <h2>words</h2>
+      <p>red little</p>
+      <p>piggy</p>
+    </section>
+  </body>
+</html>

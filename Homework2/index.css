@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+.flex{
+    display: flex;
+}
+.space_between{
+    justify-content: space-between;
+}
+.align_item{
+    align-items: center;
+}
+
+.background{
+    background-color:#3a292f;
+}
+.font{
+    color: azure;
+}
+
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.search_button{
+    background-color: orange;
+    border: 0;
+    color: azure;
+    padding: 8px 20px;
+    margin: 0 ;
+    max-width: 900px;
+    font-size: 12px;
+}
+.search_box{
+    min-width: 300px;
+    padding: 8px 0;
+    border: 0;
+    font-size: 12px;
+}
+
+p{
+    font-size: 10px;
+    color: azure;
+}
+
+i{
+    font-size: 12px;
+    color: azure;
+}
+.account p{
+    margin: 2px 0 2px 5px;
+}
+
+.font_small{
+    font-size: 4px;
+}
+
+.user_setting{
+    min-width: 10rem;
+}
+
+.menu{
+    background-color: blueviolet;
+}

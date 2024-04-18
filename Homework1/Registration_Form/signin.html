@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+    
+</head>
+<body>
+    <div class="signin">
+        <form action="post" class="form">
+            <h1 class="title">Sign In</h1>
+
+            <div class="inputContainer">
+            <input type="text" class="input" required>
+            <label class="label">First Name</label>
+            </div>
+
+            <div class="inputContainer">
+            <input type="text" class="input" required>
+            <label class="label">Last Name</label>
+            </div>
+
+            <div class="inputContainer">
+            <input type="email" class="input" placeholder="example@example.com" required>
+            <label class="label">E-mail</label>
+            </div>
+
+            <div class="inputContainer">
+            <input type="password" name="password" class="input" minlength="8" required>
+            <label class="label">PassWord</label>
+            </div>
+
+            <div class="inputContainer">
+            <input type="password" name="confirm_password" class="input" minlength="8" required>
+            <label class="label" >Cofirm PassWord</label>
+            </div>
+
+            <div class="inputContainer">
+            <input type="date" class="input" style="color: #b4b5b5;" required>
+            <label class="label">Date of Birth</label>
+            </div>
+
+            <div class="inputContainer">
+                
+            <!-- <input type="text" class="input" placeholder="a"> -->
+            <div class="input">
+                <div class="gender-option">
+                <input type="radio" name="gender" value="male" required/>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" />
+                <lable for="female" >Female</lable>
+                <input type="radio" name="gender" value="other" />
+                <label for="other">Other</label>
+                </div>
+            </div>
+            <label class="label">gender</label>
+            </div>
+
+            <div class="inputContainer">
+                <select class="input" name="country" required>
+                    <option value="" selected disabled hidden ></option>
+                    <option value="Web">Web Development</option>
+                    <option value="Data">Data Analytics</option>
+                    <option value="UI">UI/UX Design</option>
+                </select>
+            <label class="label">Choose Your Profession</label>
+            </div>
+
+            <div class="inputContainer">
+            <textarea style="padding-top: 1.2rem; height:5rem;" cols="30" rows="4" class="input" placeholder="" ></textarea>
+            <label class="label">About me</label>
+            </div>
+
+            <input type="submit" class="submitBtn" value="Submit">
+        </form>
+    </div>
+</body>
+
+
+</html>
