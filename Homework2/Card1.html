@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI Design</title>
+    <style>
+        
+        
+        #box{
+            /* Turn into a two-inline box */
+            display:flex;
+            justify-content: space-around;
+            
+            /* Make shape for div */
+            width: 90%;
+            height: 30%;
+
+            /* Locate the div in horizontal center */
+            margin:20% auto;
+            position: sticky;
+        }
+
+        .card {
+            /* Background  img*//* Make the linear gradient on color */
+            background: linear-gradient(to bottom right, rgba(30, 114, 255, 0.5), rgba(123, 104, 238, 0.5)), url('pic1.jpeg');
+            background-size: cover;
+            /* img covering the div*/
+            margin:5px;
+            background-repeat: no-repeat;
+            /* No-repeat */
+            /* Text color */
+            color: white;
+
+            /* Radius */
+            border-radius: 10px;
+        }
+
+
+        ul {
+            list-style: none;
+            /* Way2 to Make the head & bottom space on top of the ul inside the div*/
+            margin: 15% 10% 15% 2%;
+
+        }
+
+        /* make space for each list item */
+        li {
+            margin: 20px auto;
+            font-family: sans-serif;
+        }
+
+        li:first-child {
+            font-size: 2rem;
+        }
+
+        li:nth-child(2) {
+            font-size: 0.8rem;
+        }
+
+        li:last-child {
+
+            width: fit-content;
+            margin-left: 0;
+            font-size: 0.9rem;
+            border: solid 1px white;
+            padding: 10px 30px;
+            border-radius: 4px;
+        }
+
+        li:last-child:hover{
+            color:black;
+            cursor: pointer;
+            border-color: black;
+            background-color:aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+
+        <div class="card">
+            <ul>
+                <li>UX Research</li>
+                <li>Ut Enim ad minim vernian, quis notrud exercitiation ullamco laboris nisi ut alloquip ex ea commodo
+                    consequat.</li>
+                <li>LEARN MORE</li>
+            </ul>
+        </div>
+        
+        <div class="card" >
+            <ul>
+                <li>Bootcamp</li>
+                <li>Ut Enim ad minim vernian, quis notrud exercitiation ullamco laboris nisi ut alloquip ex ea commodo
+                    consequat.</li>
+                <li>LEARN MORE</li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

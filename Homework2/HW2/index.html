@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="player"> 
+        <source src="sound/lianfeifan.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container justify-content alian-center">
+        <section class="card left">
+            <h3 class="name">
+                刘醒
+            </h3>
+            <div class="info">
+                <p class="text">
+                    报告非凡哥，不用下操场！
+                </p>
+                    <button onclick="playAudio()">Play</button>
+            </div>
+        </section>
+
+        <section class="card right">
+                <h3 class="name">
+                    梁非凡
+                </h3>
+                <div class="info">
+                    <p class="text">
+                        你好嘢，梁非凡！
+                    </p>
+                    <button onclick="playAudio()">Play</button>
+                </div>
+        </section>
+    </div>
+</body>
+<script type="text/javascript">
+var x = document.getElementById("player"); 
+
+function playAudio()
+{ 
+	x.play(); 
+}
+    
+</script>
+</html>
