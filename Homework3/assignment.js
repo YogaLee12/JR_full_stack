@@ -1,0 +1,42 @@
+// 创建数组
+let shoppingList = ['牛奶', '鸡蛋', '面包'];
+
+// 添加两样物品并输出结果
+shoppingList.push('蛋糕', '蛋奶油');
+console.log(shoppingList);
+
+// 删除最后一项结果
+shoppingList.pop();
+console.log(shoppingList);
+
+//如果超过5时在控制台显示购物车已满
+function maxLength() {
+  if (shoppingList.length > 5) {
+    console.log('你的购物车满了');
+  }
+}
+//测试功能，添加至6个
+maxLength(shoppingList.push('纸巾', '沐浴露'));
+
+// 循环并输出
+for (let i = 0; i < shoppingList.length; i++) {
+  console.log(i + 1 + '. ', shoppingList[i]);
+}
+
+//创建搜索函数，该函数接受物品名称作为参数，并返回物品是否在购物清单中
+let input = prompt('请输入一个物品。')
+function searchProduct(input) {
+  if (shoppingList.includes(input)) {
+    return console.log(input, '在该数组中。');
+  } else {
+    return console.log('无法查找到物品：' + input);
+  }
+}
+searchProduct(input);
+
+// 创建一个购物物品对象，其中包括物品名称/价格和数量
+let shoppingItems = {
+  name: '牛奶',
+  price: 2,
+  quantity: 3
+}
